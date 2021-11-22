@@ -22,8 +22,8 @@ int main(){
 			printf("Valor Impar: %d - PID = %d\n", i, getpid());
 			i = i + 2;
 			sleep(1);
-			if(< == 49){
-				wait(NULL)
+			if(z == 49){
+				wait(NULL);
 			}
 		}
 		else if(fork1 > 0){
