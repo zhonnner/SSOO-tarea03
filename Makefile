@@ -17,13 +17,11 @@ $(TARGET): $(OBJS)
 	@echo Linking [$@]
 	@$(CXX) -o %@ $^ $(CXXFLAGS)
 	
-$(DIR_OBJ)/%.o: %.cc
+$(SRC_DIR)/%.o: $(SRC_DIR)/%.cc
 	@echo Compiling [$@]
-	@mkdir -p $(DIR_OBJ)
 	@$(CXX) -c -o $@ $< $(CXXFLAGS)
 
 clean:
 	@$(RM) $(OBJS)
-	@$(RM) -R $(DIR_OBJ)
 
 .PHONY: all clean distclean 
