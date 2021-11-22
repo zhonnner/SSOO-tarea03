@@ -15,7 +15,7 @@ all: $(TARGET)
 
 $(TARGET): $(OBJS)
 	@echo Linking [$@]
-	@$(CXX) -o %@ $^ $(CXXFLAGS)
+	@$(CXX) -o $^ $(CXXFLAGS)
 	
 $(SRC_DIR)/%.o: $(SRC_DIR)/%.cc
 	@echo Compiling [$@]
