@@ -8,7 +8,7 @@ DEBUG= -g
 CXXFLAGS= -Wall $(DEBUG) -std=c++17 -O2
 SRC_DIR= src
 SRC=$(wildccard $(SRC_DIR)/*.cc)
-OBJS=$(SRC:$(SRC_DIR)/%.cc=$(OBJ_DIR)/%.o)
+OBJS=$(SRC:$(SRC_DIR)/%.cc=$(SRC_DIR)/%.o)
 
 all: $(TARGET)
 	@echo Made [ $? ] OK :\) 
